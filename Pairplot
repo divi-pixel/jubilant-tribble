@@ -1,0 +1,14 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+# 1. Load the data
+penguins = sns.load_dataset('penguins')
+
+print(df.head())
+# 2. Create pair plot (complete this part)
+# Hint: Using sns.pairplot() with the appropriate parameters
+sns.pairplot(df, hue='species')
+# 3. Add title and show plot
+plt.suptitle("Penguins Measurements Pair Plot", y=1.02)
+plt.show()
